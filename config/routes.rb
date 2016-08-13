@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :models
   devise_for :users
+  devise_for :models
 root "pages#home"
 get "about" => "pages#about" #creates about_path
 
